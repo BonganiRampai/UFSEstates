@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/custom.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-secondary navbar-dark ">
+        
+        <!--Brand-->
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index"
+                >UFSEstates</a>
+            <!--Toggler/collapsible Button-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#MyNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Links-->
+            <div class="collapse navbar-collapse" id="MyNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">
+                            Home
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                            Complaints
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" asp-controller="Complaint" asp-action="ViewAll">
+                                View all
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link" asp-controller="Home" asp-action="Contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-light mb-3 container">
+        @RenderBody()
+    </div>
+    <footer class="text-center text-light bg-secondary container">
+        <p>Created by: BJ,Rampai (2021460486)<br />
+            &copy; CSIS/CSIQ3714 (2025)
+        </p>
+        <p>
+            <i class="fa-brands fa-facebook-square fa-2x"></i>
+        </p>
+        
+    </footer>
+    <!-- JavaScript -->
+    <script asp-src-include="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

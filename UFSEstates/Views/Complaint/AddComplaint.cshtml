@@ -1,0 +1,27 @@
+﻿@model Complaint
+@{
+    ViewBag.Title = "Add Complaint page";
+}
+<h3>Add Complaint</h3>
+<div>
+    <hr class="bg-dark" />
+    <form asp-controller="Complaint" asp-action="AddComplaint" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="mb-3">
+            <label asp-for="Complainant">Complainant</label>
+            <input asp-for="Complainant" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Service">Service</label>
+            <input asp-for="Service" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Description">Description</label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+        </div>        
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a asp-controller="Complaint" asp-action="ViewAll" class="btn btn-secondary">Back</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,16 @@
+﻿@model Complaint
+@{
+    ViewBag.Title = "Complaint Details page";
+}
+<h3>Complaint Details</h3>
+<div>
+    <hr class="bg-dark" />
+    <h5>@Model.Complainant</h5> @*Complainant*@
+    <hr class="bg-dark" />
+    <p>Service: @Model.Service</p> @*Service*@
+    <p>Date of Complaint: @Model.DateOfComplaint.ToShortDateString()</p>@*DateOfComplaint*@
+    <p>Description: @Model.Description</p>@*Description*@
+    <div>
+        <a asp-controller="Complaint" asp-action="ViewAll">Go Back</a>
+    </div>
+</div>
