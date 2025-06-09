@@ -45,6 +45,8 @@ UFSEstate is a web-based complaint management application developed using ASP.NE
 ## 🧑‍💻 Author
 Bongani Rampai
 GitHub: [@BonganiRampai](https://github.com/BonganiRampai)
-Email: [Email](bonganerampai@gmail.com)
-LinkedIn: [LinkedIn](https://www.linkedin.com/in/bongani-rampai)
+
+## How to reach me
+- Email: [bonganerampai@gmail.com](mailto:bonganerampai@gmail.com)
+- LinkedIn: [linkedin.com/in/bongani-rampai](https://linkedin.com/in/bongani-rampai)
 
